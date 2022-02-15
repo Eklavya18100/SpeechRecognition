@@ -30,6 +30,10 @@ function writeMessage(msg) {
 
 // Check msg against number
 function checkNumber(msg) {
+  if(msg.toLowerCase()==="play again"){
+    location.reload();
+    return;
+  }
   const num = +msg;
 
   // Check if valid number
